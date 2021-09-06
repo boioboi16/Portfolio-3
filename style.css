@@ -111,20 +111,21 @@ transition: all 1s ease-in;
   opacity: 1;
 }
 /* ------------------------------header---------------------------- */
-
+.small-logo{
+  transform: scale(0.1);
+ width: 32px;
+}
 header{
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:2em 50px;
+  padding:20px 50px;
   color:#fff;
-  
-  
   width: 100%;
   z-index: 100;
   background-color: rgb(32,35,48);
-
+height: 80px;
 }
 .nav ul{
 display: flex;
@@ -134,6 +135,7 @@ list-style: none;
   color: #fff;
   text-decoration: none;
   list-style: none;
+
 }
 nav ul li a{
   padding: 0 1em;
@@ -163,7 +165,11 @@ nav ul li a::before{
  
   cursor: pointer;
   display: none;
+  transition: 0.1s all ease;
  
+}
+.hamburger:hover{
+  transform: scale(0.9);
 }
 .hamburger .line{
   margin: 7px auto;
@@ -491,7 +497,11 @@ width: 80%;
 color: #fff;
 outline: none;
 }
-form button{
+#submit{
+  display: flex;
+  justify-content: center;
+}
+.submit{
   background-color:#262b3d;
   border:2px #fff solid;
   width: 30%;
